@@ -13,7 +13,7 @@ namespace DHL.SchemaGenerated
         private static string FILE_PATH = @"D:\serialized_request.txt";
         private static void Main(string[] args)
         {
-            var bookPickup = createNewBookPickup();
+            var bookPickup = CreateNewBookPickup();
             SendRequest(bookPickup);
         }
 
@@ -66,7 +66,7 @@ namespace DHL.SchemaGenerated
 
        
 
-        private static BookPickupRequestEA createNewBookPickup()
+        private static BookPickupRequestEA CreateNewBookPickup()
         {
             var bookPickup = new BookPickupRequestEA();
             bookPickup.Pickup = new Pickup()
